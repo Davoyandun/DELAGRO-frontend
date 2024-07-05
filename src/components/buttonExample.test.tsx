@@ -1,3 +1,4 @@
+import React from "react";
 import ButtonUsage from "./buttonExample";
 import { render } from "@testing-library/react";
 describe("ButtonUsage", () => {
