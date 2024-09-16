@@ -14,17 +14,7 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 
 import { pages } from "./Routes";
-import {
-  appBarStyles,
-  toolbarStyles,
-  titleBoxStyles,
-  titleStyles,
-  subtitleStyles,
-  mobileMenuIconStyles,
-  mobileTitleStyles,
-  navButtonsContainerStyles,
-  navButtonStyles,
-} from "./HeaderStyles";
+import sty from "./HeaderStyles";
 import Link from "next/link";
 
 const Header = () => {
@@ -39,28 +29,23 @@ const Header = () => {
   };
 
   return (
-    <AppBar position="static" sx={appBarStyles}>
+    <AppBar position="static" sx={sty.appBar}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Box sx={toolbarStyles}>
+          <Box sx={sty.toolbar}>
             <Link href="/" passHref>
-              <Box sx={titleBoxStyles}>
-                <Typography
-                  variant="h6"
-                  noWrap
-                  component="div"
-                  sx={titleStyles}
-                >
+              <Box sx={sty.titleBox}>
+                <Typography variant="h6" noWrap component="div" sx={sty.title}>
                   Del @GRO
                 </Typography>
-                <Typography variant="caption" sx={subtitleStyles}>
+                <Typography variant="caption" sx={sty.subtitle}>
                   Distribuciones y servicios para el agro
                 </Typography>
               </Box>
             </Link>
           </Box>
 
-          <Box sx={mobileMenuIconStyles}>
+          <Box sx={sty.mobileMenuIcon}>
             <IconButton
               size="large"
               aria-label="menu"
@@ -96,17 +81,17 @@ const Header = () => {
             </Menu>
           </Box>
           <Link href="/" passHref>
-            <Box sx={mobileTitleStyles}>
-              <Typography variant="h6" noWrap component="div" sx={titleStyles}>
+            <Box sx={sty.mobileTitle}>
+              <Typography variant="h6" noWrap component="div" sx={sty.title}>
                 Del @GRO
               </Typography>
             </Box>
           </Link>
 
-          <Box sx={navButtonsContainerStyles}>
+          <Box sx={sty.navButtonsContainer}>
             {pages.map((page) => (
               <Link key={page.label} href={page.path} passHref>
-                <Button sx={navButtonStyles}>
+                <Button sx={sty.navButton}>
                   {page.icon}
                   <Typography variant="caption">{page.label}</Typography>
                 </Button>
