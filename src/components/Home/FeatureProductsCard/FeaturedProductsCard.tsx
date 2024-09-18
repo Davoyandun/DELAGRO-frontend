@@ -3,7 +3,7 @@ import { Box, Typography } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import sty from "./FeaturedProductsCardStyles";
+import sty from "./FeaturedProductsCard.styles";
 interface IFeaturedProductsCard {
   product: IFeaturedProduct;
 }

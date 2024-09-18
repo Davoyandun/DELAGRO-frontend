@@ -1,8 +1,8 @@
 import { IFeaturedProduct } from "@/interfaces/product";
-
+import React from "react";
 import { Box, Grid, Typography } from "@mui/material";
 import { FeaturedProductsCard } from "@/components/Home";
-import sty from "./FeaturedProductsStyle";
+import sty from "./FeaturedProducts.styles";
 
 export default function FeaturedProducts() {
   const products: IFeaturedProduct[] = [

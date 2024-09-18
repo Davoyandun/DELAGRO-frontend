@@ -1,13 +1,13 @@
+import React from "react";
 import Image from "next/image";
-import banner from "../../../../public/banner.jpg";
 import { Box, Typography } from "@mui/material";
-import sty from "./HeroSectionStyles";
+import sty from "./HeroSection.styles";
 
 export default function HeroSection() {
   return (
     <Box sx={sty.container}>
       <Image
-        src={banner}
+        src="/banner.jpg"
         alt="growing plants"
         layout="fill"
         objectFit="cover"

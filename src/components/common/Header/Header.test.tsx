@@ -1,7 +1,7 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import Header from "../Header";
-import { pages } from "../Routes";
+import Header from "./Header";
+import { pages } from "./Routes";
 
 describe("Header component", () => {
   it("Should  render title and subtitle correctly", () => {

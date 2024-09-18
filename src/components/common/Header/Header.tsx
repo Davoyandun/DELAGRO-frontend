@@ -14,7 +14,7 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 
 import { pages } from "./Routes";
-import sty from "./HeaderStyles";
+import sty from "./Header.styles";
 import Link from "next/link";
 
 const Header = () => {
