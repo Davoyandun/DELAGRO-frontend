@@ -1,40 +1,38 @@
-// HeaderStyles.ts
-
 import { SxProps, Theme } from "@mui/material/styles";
 
-export const appBarStyles: SxProps<Theme> = {
+const appBar: SxProps<Theme> = {
   backgroundColor: "#ffffff",
   color: "#000000",
   backgroundImage: 'url("/mnt/data/image.png")',
   backgroundSize: "cover",
 };
 
-export const toolbarStyles: SxProps<Theme> = {
+const toolbar: SxProps<Theme> = {
   display: { xs: "none", md: "flex" },
   alignItems: "center",
   mr: 2,
 };
 
-export const titleBoxStyles: SxProps<Theme> = { ml: 2 };
+const titleBox: SxProps<Theme> = { ml: 2 };
 
-export const titleStyles: SxProps<Theme> = {
+const title: SxProps<Theme> = {
   fontFamily: "monospace",
   fontWeight: 700,
   letterSpacing: ".3rem",
   color: "#B92302",
 };
 
-export const subtitleStyles: SxProps<Theme> = {
+const subtitle: SxProps<Theme> = {
   fontFamily: "monospace",
   color: "#B92302",
 };
 
-export const mobileMenuIconStyles: SxProps<Theme> = {
+const mobileMenuIcon: SxProps<Theme> = {
   flexGrow: 1,
   display: { xs: "flex", md: "none" },
 };
 
-export const mobileTitleStyles: SxProps<Theme> = {
+const mobileTitle: SxProps<Theme> = {
   flexGrow: 1,
   justifyContent: "center",
   display: { xs: "flex", md: "none" },
@@ -44,7 +42,7 @@ export const mobileTitleStyles: SxProps<Theme> = {
   color: "#B92302",
 };
 
-export const navButtonsContainerStyles: SxProps<Theme> = {
+const navButtonsContainer: SxProps<Theme> = {
   flexGrow: 1,
   display: { xs: "none", md: "flex" },
   justifyContent: "space-around",
@@ -52,7 +50,7 @@ export const navButtonsContainerStyles: SxProps<Theme> = {
   mr: 5,
 };
 
-export const navButtonStyles: SxProps<Theme> = {
+const navButton: SxProps<Theme> = {
   my: 2,
   color: "black",
   display: "flex",
@@ -60,3 +58,17 @@ export const navButtonStyles: SxProps<Theme> = {
   alignItems: "center",
   textTransform: "none",
 };
+
+const style = {
+  appBar,
+  toolbar,
+  titleBox,
+  title,
+  subtitle,
+  mobileMenuIcon,
+  mobileTitle,
+  navButtonsContainer,
+  navButton,
+};
+
+export default style;
